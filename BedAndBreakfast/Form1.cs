@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BedAndBreakfast
 {
-    public partial class Form1 : Form
+    public partial class BaileysForm : Form
     {
-        public Form1()
+        public BaileysForm()
         {
             InitializeComponent();
+        }
+
+        private void BaileysForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
