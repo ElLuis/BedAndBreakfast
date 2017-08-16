@@ -52,19 +52,37 @@
     <Compile Include="BelleAireForm.Designer.cs">
       <DependentUpon>BelleAireForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BreakfastOptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BreakfastOptionForm.Designer.cs">
+      <DependentUpon>BreakfastOptionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LincolnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LincolnForm.Designer.cs">
+      <DependentUpon>LincolnForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BelleAireForm.resx">
       <DependentUpon>BelleAireForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BreakfastOptionForm.resx">
+      <DependentUpon>BreakfastOptionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LincolnForm.resx">
+      <DependentUpon>LincolnForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

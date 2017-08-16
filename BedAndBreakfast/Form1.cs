@@ -31,5 +31,21 @@ namespace BedAndBreakfast
                 belleAireCheckBox.Checked = false;
             }
         }
+
+        private void lincolnCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if(lincolnCheckBox.Checked)
+            {
+                LincolnForm linconInForm = new LincolnForm();
+                linconInForm.ShowDialog();
+                lincolnCheckBox.Checked = false;
+            }
+        }
+
+        private void mealButton_Click(object sender, EventArgs e)
+        {
+            BreakfastOptionForm breakfastForm = new BreakfastOptionForm();
+            breakfastForm.ShowDialog();
+        }
     }
 }

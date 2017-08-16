@@ -32,6 +32,7 @@
             this.rateLabel1 = new System.Windows.Forms.Label();
             this.belleAireCheckBox = new System.Windows.Forms.CheckBox();
             this.lincolnCheckBox = new System.Windows.Forms.CheckBox();
+            this.mealButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // welcomeLabel1
@@ -73,6 +74,17 @@
             this.lincolnCheckBox.TabIndex = 3;
             this.lincolnCheckBox.Text = "Lincoln Room";
             this.lincolnCheckBox.UseVisualStyleBackColor = true;
+            this.lincolnCheckBox.CheckedChanged += new System.EventHandler(this.lincolnCheckBox_CheckedChanged);
+            // 
+            // mealButton
+            // 
+            this.mealButton.Location = new System.Drawing.Point(115, 329);
+            this.mealButton.Name = "mealButton";
+            this.mealButton.Size = new System.Drawing.Size(115, 23);
+            this.mealButton.TabIndex = 4;
+            this.mealButton.Text = "Click for meal options";
+            this.mealButton.UseVisualStyleBackColor = true;
+            this.mealButton.Click += new System.EventHandler(this.mealButton_Click);
             // 
             // BaileysForm
             // 
@@ -80,6 +92,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(429, 364);
+            this.Controls.Add(this.mealButton);
             this.Controls.Add(this.lincolnCheckBox);
             this.Controls.Add(this.belleAireCheckBox);
             this.Controls.Add(this.rateLabel1);
@@ -98,6 +111,7 @@
         private System.Windows.Forms.Label rateLabel1;
         private System.Windows.Forms.CheckBox belleAireCheckBox;
         private System.Windows.Forms.CheckBox lincolnCheckBox;
+        private System.Windows.Forms.Button mealButton;
     }
 }
 
