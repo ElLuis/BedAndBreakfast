@@ -30,6 +30,8 @@
         {
             this.welcomeLabel1 = new System.Windows.Forms.Label();
             this.rateLabel1 = new System.Windows.Forms.Label();
+            this.belleAireCheckBox = new System.Windows.Forms.CheckBox();
+            this.lincolnCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // welcomeLabel1
@@ -51,12 +53,35 @@
             this.rateLabel1.TabIndex = 1;
             this.rateLabel1.Text = "Check our rates";
             // 
+            // belleAireCheckBox
+            // 
+            this.belleAireCheckBox.AutoSize = true;
+            this.belleAireCheckBox.Location = new System.Drawing.Point(115, 132);
+            this.belleAireCheckBox.Name = "belleAireCheckBox";
+            this.belleAireCheckBox.Size = new System.Drawing.Size(91, 17);
+            this.belleAireCheckBox.TabIndex = 2;
+            this.belleAireCheckBox.Text = "BelleAireSuite";
+            this.belleAireCheckBox.UseVisualStyleBackColor = true;
+            this.belleAireCheckBox.CheckedChanged += new System.EventHandler(this.belleAireCheckBox_CheckedChanged);
+            // 
+            // lincolnCheckBox
+            // 
+            this.lincolnCheckBox.AutoSize = true;
+            this.lincolnCheckBox.Location = new System.Drawing.Point(115, 176);
+            this.lincolnCheckBox.Name = "lincolnCheckBox";
+            this.lincolnCheckBox.Size = new System.Drawing.Size(91, 17);
+            this.lincolnCheckBox.TabIndex = 3;
+            this.lincolnCheckBox.Text = "Lincoln Room";
+            this.lincolnCheckBox.UseVisualStyleBackColor = true;
+            // 
             // BaileysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(429, 364);
+            this.Controls.Add(this.lincolnCheckBox);
+            this.Controls.Add(this.belleAireCheckBox);
             this.Controls.Add(this.rateLabel1);
             this.Controls.Add(this.welcomeLabel1);
             this.Name = "BaileysForm";
@@ -71,6 +96,8 @@
 
         private System.Windows.Forms.Label welcomeLabel1;
         private System.Windows.Forms.Label rateLabel1;
+        private System.Windows.Forms.CheckBox belleAireCheckBox;
+        private System.Windows.Forms.CheckBox lincolnCheckBox;
     }
 }
 

@@ -21,5 +21,15 @@ namespace BedAndBreakfast
         {
 
         }
+
+        private void belleAireCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if(belleAireCheckBox.Checked)
+            {
+                BelleAireForm belleAireForm = new BelleAireForm();
+                belleAireForm.ShowDialog();
+                belleAireCheckBox.Checked = false;
+            }
+        }
     }
 }
